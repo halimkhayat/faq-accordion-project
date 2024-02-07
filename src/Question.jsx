@@ -1,6 +1,8 @@
 import React from "react";
 import './faq.css'
 import { useState } from "react";
+import minus from "../src/assets/icon-minus.svg"
+import plus from "../src/assets/icon-plus.svg"
 
 
 export default function Question(props) {
@@ -16,7 +18,7 @@ export default function Question(props) {
                 <div className="the-question">
                     {props.question && <p>{props.question}</p>}
                     <a onClick={clickShown}>
-                        {isShown ? <img src="../src/assets/icon-minus.svg"/> : <img src="../src/assets/icon-plus.svg"/>}
+                        {isShown ? <img src={minus}/> : <img src={plus}/>}
                     </a>
                 </div>
                 {isShown && <div className="details">{props.answer} </div>}

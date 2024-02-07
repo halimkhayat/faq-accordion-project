@@ -2,6 +2,7 @@ import React from "react";
 import "./faq.css"
 import Data from "./Data.jsx"
 import Question from "./Question";
+import star from "../src/assets/icon-star.svg"
 
 
 
@@ -20,7 +21,7 @@ function Faq(props){
     <div className="faq-box">
         <div className="container">
             <div className="faq-header">
-                <img src="../src/assets/icon-star.svg"/>
+                <img src={star}/>
                 <h1>FAQs</h1>
             </div>
             {FaqQuestion}
